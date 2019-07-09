@@ -9,8 +9,8 @@ import { MoviesService } from 'src/app/movies.service';
 })
 export class ListapelisComponent implements OnInit {
 
-  private movies: Movies[];
-  private selectedMovie: Movies;
+  public movies: Movies[];
+  public selectedMovie: Movies;
 
   constructor( public moviesService: MoviesService ) { }
 
