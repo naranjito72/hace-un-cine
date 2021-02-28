@@ -14,7 +14,7 @@ export class MovieService {
   // private ROOT_URL = 'http://localhost:3000/movies';
 
   // fake api online
-  private ROOT_URL: string = "https://my-json-server.typicode.com/naranjito72/hace-un-cine/db";
+  private ROOT_URL: string = "https://my-json-server.typicode.com/naranjito72/hace-un-cine/movies";
 
   constructor(private http: HttpClient) { }
 
