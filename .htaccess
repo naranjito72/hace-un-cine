@@ -3,8 +3,9 @@
    Header set Access-Control-Allow-Origin "http://localhost:3000/movies"
 =======
 <IfModule mod_headers.c>
-   Header set Access-Control-Allow-Origin "http://localhost:3000/movies"
+   Header set Access-Control-Allow-Origin "https://my-json-server.typicode.com/naranjito72/hace-un-cine/db"
 ============
 Header add Access-Control-Allow-Origin "http://localhost:3000/movies"
+Header add Access-Control-Allow-Origin "https://my-json-server.typicode.com/naranjito72/hace-un-cine/db"
 Header add Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
 Header add Access-Control-Allow-Headers "Content-Type, Authorization"
