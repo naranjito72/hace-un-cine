@@ -1,0 +1,23 @@
+<br>
+<div class="row d-flex flex-row justify-content-center mt-5">
+  <div class="col-lg-4 col-md-6 col-sm-12" >
+    <div class="card border-0 bg-transparent" style="width: 18rem;">
+      <img [src]="movie?.poster" alt="poster"/>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="card bg-dark" style="width: 18rem;" id="cardOnlyText">
+      <div class="card-body">
+        <h5 class="card-title bg-transparent text-light">{{ movie?.title }}</h5>
+        <h5 class="card-title">{{ movie?.year }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted lead">Synopsis</h6>
+        <p class="card-text">{{ movie?.synopsis }}</p>
+        <div class="card-text text-muted lead">Actors:</div>
+        <p class="card-text">{{ movie?.actors }}</p>
+        <p class="card-text lead text-muted">Directed by <br>
+        <span class="card-text lead">{{ movie?.director }}</span>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>

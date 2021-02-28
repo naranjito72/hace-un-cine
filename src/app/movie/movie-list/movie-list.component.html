@@ -1,0 +1,12 @@
+<ul *ngIf="movies$ | async as movies" class="mt-5">
+  <li *ngFor="let movie of movies">
+   <div class="card ml-2 border-0 bg-transparent" style="width: 15rem;">
+    <img [src]="movie.poster" alt="poster" class="rounded">
+    <div class="card-body bg-transparent text-light">
+      <h5 class="card-title  font-weight-bold">{{ movie.title }}</h5>
+
+      <a [routerLink]="movie.id" class="btn btn-primary">Details</a>
+    </div>
+  </div>
+  </li>
+</ul>

@@ -1,4 +1,22 @@
-[
+// modelling object Movie
+// why interface and not a class'
+// https://stackoverflow.com/questions/51716808/when-use-a-interface-or-class-in-typescript
+// https://stackoverflow.com/questions/40973074/difference-between-interfaces-and-classes-in-typescript
+
+export interface Movie {
+  // hate to place type any to let go typescript
+  //  look deeper into it!!!
+  id: number | any;
+  title: string | any;
+  poster: string;
+  synopsis: string;
+  genres: string [];
+  year: number;
+  director: string;
+  actors: string [];
+}
+// fake list
+export const movies: Movie[] = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -72,7 +90,7 @@
       "Gary Oldman"
     ]
   }, {
-  {
+
     id: 5,
     title: "Schindler's List",
     poster: "https://i.imgur.com/IWZJOmu.jpg",

@@ -1,0 +1,10 @@
+img, .cardOnlyText{
+  max-width: 300px;
+  height: 460px;
+
+}
+@media (max-width: 640px) {
+img{
+  max-width:300px
+}
+}
