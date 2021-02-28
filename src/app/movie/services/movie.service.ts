@@ -10,8 +10,11 @@ import { Movie, movies } from '../models/movie.model';
 })
 export class MovieService {
 
-  // fake api localhot
-  private ROOT_URL = 'http://localhost:3000/movies';
+  // fake api localhost
+  // private ROOT_URL = 'http://localhost:3000/movies';
+
+  // fake api online
+  private ROOT_URL: string = "https://my-json-server.typicode.com/naranjito72/hace-un-cine/db";
 
   constructor(private http: HttpClient) { }
 
