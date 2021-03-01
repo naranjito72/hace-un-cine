@@ -135,3 +135,43 @@ Mostraremos ahora los detalles de cada película. Utilizaremos el service `movie
 Dale tu toque personal a la página.
 
 ![](https://imgur.com/kTenY67.png)
+
+### Scrum
+
+1. Creaci&oacute;n proyecto
+	- CLI
+	- Lineas comandos ng new | g | c
+	- Componentes y servicios
+
+2. Creación modelo
+	- Interface Movie
+	- Array Movies
+	
+3. Routing
+	- forRoot(routes)
+	- forChildren(routes)
+	- loadChildren: () => {}
+	
+4. Servicios
+	- getMovies() & getMovie(id: number) => json
+	- getMoviesHttp() & getMovieHttp(id: number) => json-server
+	
+5. Lista Movies
+	- *ngFor*
+	- *ngIf*
+	- *[src]*
+	- *[routerLink]*
+	
+6. Movie
+	- @Input()
+	- Comunicaci&oacute;n entre componentes
+
+7. A&ntilde;adir b&uacute;squeda
+	- Navbar (commons)
+	
+8. Dise&ntilde;o juego
+
+9. Implementaci&oacute;n juego
+
+	
+

@@ -23,5 +23,5 @@ export class MovieListComponent implements OnInit {
    this.movies$ = this.movieService.getMoviesHttp();
     this.navbarService.title?.next('Movie List');
   }
-
+// How to unsubscribe. Look out for it
 }
