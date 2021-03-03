@@ -169,6 +169,9 @@ Dale tu toque personal a la página.
 
 7. A&ntilde;adir b&uacute;squeda
 	- Navbar (commons)
+  - [SharedModule](https://stackoverflow.com/questions/61148358/angular-custom-pipe-not-working-pipe-not-found) *Dos d&iacute;s me ha tenido bloqueado!!*
+  - Pipes
+  
 	
 8. Dise&ntilde;o juego
 

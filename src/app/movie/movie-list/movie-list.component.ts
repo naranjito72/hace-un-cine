@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { NavbarService } from 'src/app/navbar/services/navbar.service';
 import { Movie } from '../models/movie.model';
 import { MovieService } from '../services/movie.service';
+import { FilterPipe } from '../../serch-bar/pipes/filter.pipe';
 
 
 
@@ -15,7 +16,7 @@ import { MovieService } from '../services/movie.service';
 export class MovieListComponent implements OnInit {
   // assigning observables
   movies$?: Observable<Movie[]>;
-
+  movieDetails: string = "";
   constructor(private movieService: MovieService,
               private navbarService: NavbarService) {}
 
@@ -27,7 +28,6 @@ export class MovieListComponent implements OnInit {
    // use with fake json-server localhost
    this.movies$ = this.movieService.getMoviesHttp();
     this.navbarService.title?.next('Movie List');
-
   }
 // How to unsubscribe. Look out for it
 }
