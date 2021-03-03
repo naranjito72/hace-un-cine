@@ -155,6 +155,7 @@ Dale tu toque personal a la página.
 4. Servicios
 	- getMovies() & getMovie(id: number) => json
 	- getMoviesHttp() & getMovieHttp(id: number) => json-server
+	- [Observables](https://www.youtube.com/watch?v=Tux1nhBPl_w)
 	
 5. Lista Movies
 	- *ngFor*

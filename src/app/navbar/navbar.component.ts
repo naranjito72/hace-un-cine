@@ -10,8 +10,9 @@ import { NavbarService } from './services/navbar.service';
 export class NavbarComponent implements OnInit {
 
   title$ = this.navbarservice.title;
-  
+
   constructor(private navbarservice: NavbarService) { }
+
 
   ngOnInit(): void {
   }
