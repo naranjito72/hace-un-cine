@@ -4,6 +4,7 @@ import { distinctUntilChanged } from 'rxjs/operators';
 import { Movie } from '../movie/models/movie.model';
 // get the url from movie service
 import { MovieService } from '../movie/services/movie.service';
+import { SearchBarService } from './services/search-bar.service';
 
 @Component({
   selector: 'toh-serch-bar',
@@ -13,15 +14,15 @@ import { MovieService } from '../movie/services/movie.service';
 export class SerchBarComponent implements OnInit {
 
 movies$:Observable<Movie[]> | any;
-
-  constructor(private movieService: MovieService) { }
-
-  // ngModel data write down by user
-filterMovies: string = '';
+ // ngModel data write down by user
+ filterMovies: string = "";
+  constructor(private movieService: MovieService,
+              public searchService: SearchBarService) { }
 
   ngOnInit(): void {
     // access to movie url
     this.movies$ = this.movieService.getMoviesHttp();
+    this.filterMovies = this.searchService.filterMovies;
   }
 
   checkMovies(): ReturnType<typeof setTimeout> {
@@ -30,7 +31,7 @@ filterMovies: string = '';
     }, 1000);
    // return timer;
     distinctUntilChanged();
-    
+
     return timer;
     }
 

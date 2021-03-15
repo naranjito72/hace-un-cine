@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of, EMPTY } from "rxjs";
 import { map } from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,7 +19,7 @@ export class SearchBarService {
 // where to get the data from
   public baseUrl: string = "https://my-json-server.typicode.com/naranjito72/hace-un-cine/movies";
   public searchResults: any;
-
+  public filterMovies: string = '';
   // makes http call to the api
   public searchEntries(term: any): Observable<any> | undefined{
     if(term === ""){

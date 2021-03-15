@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SerchBarComponent } from './serch-bar/serch-bar.component';
 import { SharedModule } from './shared/shared/shared.module';
+import { SearchBarService } from '../app/serch-bar/services/search-bar.service'
 //import { FilterPipe } from './serch-bar/pipes/filter.pipe';
 
 
@@ -30,7 +31,7 @@ import { SharedModule } from './shared/shared/shared.module';
     FormsModule,
     SharedModule
   ],
-  providers: [],
+  providers: [SearchBarService],
   bootstrap: [AppComponent],
   exports: [NavbarComponent, SerchBarComponent]
 })

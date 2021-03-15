@@ -19,7 +19,7 @@ export class MovieService {
   private ROOT_URL: string = "https://my-json-server.typicode.com/naranjito72/hace-un-cine/movies";
 
   constructor(private http: HttpClient) { }
-
+// filterMovies = '';
   // functions from http
   getMoviesHttp(){
     return this.http.get<Movie[]>(this.ROOT_URL);
